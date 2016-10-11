@@ -1,0 +1,30 @@
+{
+  "name": "browserify-hmr-with-cssinjs-sample",
+  "version": "0.0.1",
+  "description": "browserify-hmr with css-in-js sample project",
+  "main": "src/index.jsx",
+  "scripts": {
+    "watch": "node_modules/.bin/watchify -v -p browserify-hmr -t react-jadeify -t cssify -t babelify -o dist/bundle.js ."
+  },
+  "author": "wordijp",
+  "license": "MIT",
+  "dependencies": {
+    "aphrodite": "^0.6.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify-hmr": "^0.3.5",
+    "cssify": "^1.0.3",
+    "jade": "^1.11.0",
+    "jadeify": "^4.6.0",
+    "react-jadeify": "0.0.5",
+    "react-transform-hmr": "^1.0.4",
+    "watchify": "^3.7.0"
+  }
+}
